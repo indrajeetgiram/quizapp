@@ -1,0 +1,58 @@
+body {
+  padding-top: 50px;
+}
+
+.blast {
+  animation: blast-effect 1s forwards;
+}
+
+@keyframes blast-effect {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.question-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.answer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Style for the nav-tabs */
+.nav-tabs .nav-item .nav-link {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Focused tab */
+.nav-tabs .nav-item .nav-link.active,
+.nav-tabs .nav-item .nav-link:hover {
+  background-color: #007bff !important;
+  color: white !important;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+/* Less focused tabs */
+.nav-tabs .nav-item .nav-link {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.nav-tabs .nav-item .nav-link:not(.active):not(:hover) {
+  opacity: 0.6;
+}
