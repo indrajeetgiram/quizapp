@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Vocabulary Quiz for Marathi Speakers</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="text-center">English Vocabulary Quiz for Marathi Speakers</h1>
+      <!-- Main Navigation Tabs -->
+      <ul class="nav nav-tabs justify-content-center" id="mainQuizTabs">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="simple-tab"
+            href="#"
+            onclick="showDifficulty('simple')"
+            >Simple</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="medium-tab"
+            href="#"
+            onclick="showDifficulty('medium')"
+            >Medium</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="tough-tab"
+            href="#"
+            onclick="showDifficulty('tough')"
+            >Tough</a
+          >
+        </li>
+      </ul>
+
+      <!-- Sub Navigation for Questions -->
+      <ul class="nav nav-tabs justify-content-center mt-3" id="quizTabs">
+        <!-- Dynamic Sub Tabs will be generated here -->
+      </ul>
+
+      <!-- Quiz Questions -->
+      <div id="quiz-container" class="mt-4">
+        <!-- Dynamic Question Content will be generated here -->
+      </div>
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
